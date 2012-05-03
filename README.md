@@ -12,5 +12,4 @@ Feel free to test yourself and let me know what you find.
 
 More details about these issues will be on the Spiderlabs Blog shortly.
 
-Thanks,
-@claudijd
+-claudijd
