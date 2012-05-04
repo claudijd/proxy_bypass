@@ -7,7 +7,12 @@ require 'timeout'
 # desired ports open, I use github here, 
 # but it can be anything of your choosing.
 web_server =  Resolv.getaddress 'github.com'
-web_ports = [ '443' ]
+web_ports = [ 
+  '443',
+  '80',
+  '22',
+  #'<port>'
+]
 
 #Define a list of hosts likely to be whitelisted
 # Note: adding more domains to this list will 
