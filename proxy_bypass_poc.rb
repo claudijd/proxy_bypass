@@ -6,7 +6,11 @@ require 'timeout'
 # Note: this can be anything that has the 
 # desired ports open, I use github here, 
 # but it can be anything of your choosing.
-web_server =  Resolv.getaddress 'github.com'
+web_servers = [
+  Resolv.getaddress 'github.com', #IP Address
+  "github.com"  #Domain Name
+]
+
 web_ports = [ 
   '443',
   '80',
@@ -69,6 +73,7 @@ def status(status,proxy_socket,connect_method)
 end
 
 #Iterate through all the combinations
+web_servers.each do |web_server|
 web_ports.each do |web_port|
 proxy_sockets.each do |proxy_socket|
   timeout = false
@@ -123,5 +128,6 @@ proxy_sockets.each do |proxy_socket|
     end
     break if timeout
   end
+end
 end
 end
