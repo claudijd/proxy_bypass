@@ -15,4 +15,5 @@ More details about these issues are on the Spiderlabs Blog:
 http://blog.spiderlabs.com/2012/05/bypass-vulnerabilities-in-squid-and-mcafee-web-access-gateway.html
 
 Thanks,
--claudijd
+
+@claudijd
